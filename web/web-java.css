@@ -10,12 +10,15 @@ and open the template in the editor.
 body {
     background-image:url('uyuni2.jpg');
     background-size:cover;
-
     -webkit-font-smoothing: antialiased;
     font: normal 14px Roboto,arial,sans-serif;
     font-family: 'Dancing Script', cursive!important;
 }
-
+#final{
+    color: #ff0000;
+    float: bottom;
+    font-size: 18px;
+}
 .container {
     padding: 52px;
     float: right ;
@@ -48,7 +51,7 @@ h1{
     float: right;
     color:#990066;
     font-size: 70px;
-    
+
 }
 h4 { 
     border:0 solid #fff; 
