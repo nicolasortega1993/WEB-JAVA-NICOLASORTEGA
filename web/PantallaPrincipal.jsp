@@ -46,28 +46,26 @@
                         <a class="dropdown-item" href="controlador?accion=Listarhostel">LISTA DE VOLUNTARIADOS</a>
                         <a class="dropdown-item" href="controlador?accion=registroHost">REGISTRAR UN VOLUNTARIADO</a>
                     </div>
-                </li>  
-                
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="controlador?accion=buscar&ide=${hos.getIdHostel()}" id="navbarDropdown" role="button" data-toggle="dropdown">
                         BUSCAR
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="controlador?accion=BuscarHostel">${nombreHos.getUbicacion()}</a>
+                        <a class="dropdown-item" href="controlador?accion=Listarhostel">${hos.getUbicacion()}</a>
                     </div>
-                </li> 
-               
+                </li>
                 <div class="dropdown">
                     <button style="border: none" class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ${nombreUser.getNombre()}
+                        ${nombreUser.getNombre()} ${nombreUser.getApellido()}
                     </button>
                     <div class="dropdown-menu text-center">
 
-                        <a class="dropdown-item" href="controlador?accion=Listar">
+                        <a class="dropdown-item" href="#">
                             <img src="img/user.png" alt="60" width="60"/>
                         </a>
                         <a class="dropdown-item" href="#">${nombreUser.getMail()}</a>
-                        <a class="dropdown-item" href="controlador?accion=Editar">Editar Usuario</a>
+                        <a class="dropdown-item" href="controlador?accion=Editarusuario&ide=${nombreUser.getIdClientes()}">Editar usuario</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="controlador?accion=Salir">Salir</a>
 
